@@ -19,7 +19,7 @@ body {
 /** pageload */
 .pageload-overlay {
 	position: fixed;
-	background-color: grey;
+	background-color: #4a5760;
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -41,7 +41,7 @@ body {
 }
 
 .pageload-overlay::after {
-	background: #fff;
+	background: #ff57d0;
 	-webkit-transform: translateX(-24px);
 	transform: translateX(-24px);
 	-webkit-animation: moveRight 0.6s linear infinite alternate;
@@ -49,7 +49,7 @@ body {
 }
 
 .pageload-overlay::before {
-	background: #a51d55;
+	background: #6a777d;
 	-webkit-transform: translateX(24px);
 	transform: translateX(24px);
 	-webkit-animation: moveLeft 0.6s linear infinite alternate;

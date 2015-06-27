@@ -7,7 +7,7 @@ define(['jquery', 'nprogress'], function($, NP) {
     	setTimeout(function() {
     		$(".page7 .icon-1").addClass("fadeOut");
     		$(".page7 .icon-2").removeClass("hide");
-    	}, 2500);
+    	}, 2000);
     };
 
 	return p7;

@@ -39,10 +39,10 @@ requirejs.config({
 
 require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, wechat) {
     $(function() {
-        var preOntouch = document.ontouchstart;
-        document.ontouchstart = function(e){ 
-            e.preventDefault(); 
-        };
+        var preOntouch = document.ontouchmove;
+        // document.ontouchstart = function(e){ 
+        //     e.preventDefault(); 
+        // };
 
         pages.init();
         wechat.init();
@@ -51,20 +51,24 @@ require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, w
 
         var runPage = new FullPage({
             id : 'pageContain',                            // id of contain
-            slideTime : 200,                               // time of slide
+            slideTime : 300,                               // time of slide
             effect : {                                     // slide effect
                 transform : {
-                    translate : 'none',                   // 'X'|'Y'|'XY'|'none'
+                    translate : 'X',                   // 'X'|'Y'|'XY'|'none'
                     scale : [1, 1],                   // [scalefrom, scaleto]
                     rotate : [0, 0]                    // [rotatefrom, rotateto]
                 },
                 opacity : [0, 1]                       // [opacityfrom, opacityto]
             },                           
-            mode : '',                                  // mode of fullpage
+            mode : 'touch',                                  // mode of fullpage
             easing : 'ease'                                // easing('ease','ease-in','ease-in-out' or use cubic-bezier like [.33, 1.81, 1, 1];
             , onSwipeStart : function(index, thisPage) {   // callback before pageChange
+                if ($(thisPage).hasClass('page1')) {
+                    return 'stop';
+                }
             }
             , beforeChange : function(index, thisPage) {   // callback before pageChange
+                $(".page1 .btn-outer").hide();
             }
             , callback : function(index, thisPage) {       // callback when pageChange     
                 if ($(thisPage).hasClass('page7')) {

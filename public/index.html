@@ -17,12 +17,14 @@
 	<div class="pageload-overlay"></div>
 	<div style="width:100px;height:1px;overflow:hidden;position:absolute;top:-1px;">
 	</div>
+	<div class="fixed hide bubble dialog">
+	</div>
 	<div id="pageContain">
 		<!-- page 1, idx 1 -->
 		<div class="page page1 current" data-idx="1">
 			<div class="contain">
 				<img class="fixed bubble delay-2 icon" src="assets/p1/icon.png">
-				<img class="fixed bubble delay-1 label" src="assets/p1/label.png">
+				<img class="fixed topIn delay-1 label" src="assets/p1/label.png">
 				<img class="fixed bubble delay-4 btn" src="assets/p1/btn.png" ontouchstart="next();">
 			</div>
 		</div>
@@ -38,7 +40,7 @@
 
 				<img class="fixed fadeIn delay-5 icon-1" src="assets/p2/icon-1.png">
 				<img class="fixed fadeIn delay-7 icon-2" src="assets/p2/icon-2.png">
-				<img class="fixed fadeIn delay-9 icon-3" src="assets/p2/icon-3.png">
+				<img class="fixed bubble delay-9 icon-3" src="assets/p2/icon-3.png">
 				<img class="fixed fadeIn delay-11 icon-4" src="assets/p2/icon-4.png">
 
 				<img class="fixed left-in delay-1 arrow" src="assets/next-arrow.png" ontouchstart="next();">
@@ -58,7 +60,7 @@
 
 				<img class="fixed fadeIn delay-5 icon-1" src="assets/p3/icon-1.png">
 				<img class="fixed fadeIn delay-7 icon-2" src="assets/p3/icon-2.png">
-				<img class="fixed fadeIn delay-9 icon-3" src="assets/p3/icon-3.png">
+				<img class="fixed bubble delay-9 icon-3" src="assets/p3/icon-3.png">
 
 				<img class="fixed left-in delay-1 arrow" src="assets/next-arrow.png" ontouchstart="next();">
 				
@@ -77,7 +79,7 @@
 				<img class="fixed fadeIn delay-2 ban-inner ban-inner-r" src="assets/p4/ban-inner-r.png">
 				<img class="fixed topIn delay-5 ban-outer ban-r" src="assets/ban.png">
 
-				<img class="fixed fadeIn delay-5 icon-1" src="assets/p4/icon-1.png">
+				<img class="fixed bubble delay-5 icon-1" src="assets/p4/icon-1.png">
 				<img class="fixed fadeIn delay-7 icon-2" src="assets/p4/icon-2.png">
 				<img class="fixed fadeIn delay-9 icon-3" src="assets/p4/icon-3.png">
 
@@ -130,10 +132,10 @@
 				<img class="fixed hide fadeIn delay-3 duration-mid icon icon-2" src="assets/p9/icon.png">
 
 
-				<div class="fixed bubble delay-13 text-outer text-outer-1">
+				<div class="fixed bubble delay-11 text-outer text-outer-1">
 					<img class="text-1" src="assets/p10/text-bottom-l.png">
 				</div>
-				<div class="fixed bubble delay-13 text-outer text-outer-2">
+				<div class="fixed bubble delay-11 text-outer text-outer-2">
 					<img class="text-2" src="assets/p10/text-bottom-r.png">
 				</div>
 
@@ -145,7 +147,9 @@
 			<div class="contain">
 				<img class="fixed delay-1 right-in img" src="assets/p11/img.png">
 
-				<img class="fixed bottom-in delay-3 label-bottom" src="assets/p11/label-bottom.png">
+				<img class="fixed right-in delay-3 item-1" src="assets/p11/item-1.png">
+				<img class="fixed right-in delay-4 item-2" src="assets/p11/item-2.png">
+				<img class="fixed right-in delay-5 item-3" src="assets/p11/item-3.png">
 
 				<img class="fixed left-in delay-2 arrow" src="assets/next-arrow.png" ontouchstart="next();">
 			</div>
@@ -156,7 +160,9 @@
 			<div class="contain">
 				<img class="fixed topIn delay-1 label-top" src="assets/p12/label-top.png">
 				<img class="fixed bubble delay-2 label-mid" src="assets/p12/label-mid.png">
-
+				<div class="fixed fadeIn delay-3 index">
+					0
+				</div>
 				<div class="right-in delay-3 group-1">
 					<img class="fixed icon-img row-1 line-1 icon-11" src="assets/p12/icon-11.png">
 					<img class="fixed icon-img row-1 line-2 icon-12" src="assets/p12/icon-12.png">
@@ -182,7 +188,10 @@
 				</div>
 
 				<img class="fixed left-in delay-3 btn btn-l" src="assets/p12/img-l.png" ontouchstart="p9.share();">
-				<img class="fixed right-in delay-4 btn btn-r" src="assets/p12/img-l.png" ontouchstart="p9.share();">
+				<img class="fixed right-in delay-4 btn btn-r" src="assets/p12/img-r.png" ontouchstart="p9.share();">
+				<div class="fadeIn overlay" ontouchstart="p9.shareClose();">
+					<img class="bubble delay-2 hint" src="assets/p12/hint.png">
+				</div>
 			</div>
 		</div>
 	</div>

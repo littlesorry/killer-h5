@@ -45,9 +45,11 @@ define(['jquery', 'wechat', 'nprogress'], function($, wechat, NP) {
 	p9.share = function(idx) {
 		$(".page9 .overlay").show();
 		if (idx  == 1) {
+			$(".page .btn-outer-l").show();
 			wechat.shareTimeline("网易首款女上位陌生交友神器来啦！");
 			wechat.shareFriend("网易首款女上位陌生交友神器来啦！");
 		} else {
+			$(".page .btn-outer-r").show();
 			wechat.shareTimeline("你们这些骗人的小碧池，我裤子都脱了，你给我看这个！");
 			wechat.shareFriend("你们这些骗人的小碧池，我裤子都脱了，你给我看这个！");
 		}
@@ -58,6 +60,7 @@ define(['jquery', 'wechat', 'nprogress'], function($, wechat, NP) {
 	};
 
 	p9.shareClose = function() {
+		$(".page .btn-outer").hide();
 		$(".page9 .overlay").hide();
 		wechat.callback = null;
 	};

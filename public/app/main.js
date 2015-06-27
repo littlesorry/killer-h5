@@ -59,7 +59,7 @@ require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, w
                 },
                 opacity : [0, 1]                       // [opacityfrom, opacityto]
             },                           
-            mode : '',               // mode of fullpage
+            mode : '',                                  // mode of fullpage
             easing : 'ease'                                // easing('ease','ease-in','ease-in-out' or use cubic-bezier like [.33, 1.81, 1, 1];
             , onSwipeStart : function(index, thisPage) {   // callback before pageChange
             }

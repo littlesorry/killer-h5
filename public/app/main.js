@@ -71,6 +71,8 @@ require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, w
                     p7.render();
                 } else if ($(thisPage).hasClass('page9')) {
                     p9.render();
+                } else if ($(thisPage).hasClass('page1')) {
+                    p1.render();
                 }
             }
         });

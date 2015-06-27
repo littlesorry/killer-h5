@@ -37,6 +37,7 @@ define(['jquery', 'wechat', 'nprogress'], function($, wechat, NP) {
 	};
 
 	p9.render = function() {
+		$(".page .btn-outer").hide();
 		setTimeout(function() {
 			$(".page9 .index").animateNumbers(213797);
 		}, 1000);

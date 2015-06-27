@@ -15,6 +15,7 @@ define(['jquery', 'wx'], function($, wx) {
 
 	wechat.shareTimeline = function(msg) {
 		var link = host;
+		$("title").html(msg);
 		wx.onMenuShareTimeline({
 		    title: msg,
 		    desc: msg,
@@ -30,6 +31,7 @@ define(['jquery', 'wx'], function($, wx) {
 
 	wechat.shareFriend = function(msg) {
 		var link = host;
+		$("title").html(msg);
 		wx.onMenuShareAppMessage({
 		    title: msg,
 		    desc: msg,

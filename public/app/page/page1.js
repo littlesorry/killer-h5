@@ -5,6 +5,10 @@ define(["jquery"], function($) {
 	p1.init = function() {
 	};
 
+	p1.render = function() {
+		$(".page1 .btn-outer").hide();
+	};
+
 	p1.next = function() {
 		$(".page1 .btn-outer").show();
 		setTimeout(function() {

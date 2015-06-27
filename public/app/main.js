@@ -45,7 +45,8 @@ require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, w
 
         pages.init();
         wechat.init();
-        wechat.shareTimeline();
+        wechat.shareTimeline("网易首款女上位陌生交友神器来啦！");
+        wechat.shareFriend("网易首款女上位陌生交友神器来啦！");
 
         var runPage = new FullPage({
             id : 'pageContain',                            // id of contain

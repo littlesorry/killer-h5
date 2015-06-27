@@ -3,7 +3,7 @@ define(['jquery', 'wx'], function($, wx) {
 	var wechat = {};
 
 	var host = 'http://121.41.15.119:3000/';
-	var img = '';
+	var img = 'http://121.41.15.119:3000/assets/p9/icon.png';
 
 	wechat.init = function() {
         wx.showOptionMenu();
@@ -13,11 +13,11 @@ define(['jquery', 'wx'], function($, wx) {
 		wechat.callback && (wechat.callback());
 	}
 
-	wechat.shareTimeline = function(id) {
+	wechat.shareTimeline = function(msg) {
 		var link = host;
 		wx.onMenuShareTimeline({
-		    title: '有杀气童话',
-		    desc: '有杀气童话',
+		    title: msg,
+		    desc: msg,
 		    link: link,
 		    imgUrl: img,
 		    success: function () {
@@ -28,11 +28,11 @@ define(['jquery', 'wx'], function($, wx) {
 		});
 	};
 
-	wechat.shareFriend = function() {
+	wechat.shareFriend = function(msg) {
 		var link = host;
 		wx.onMenuShareAppMessage({
-		    title: '有杀气童话',
-		    desc: '有杀气童话',
+		    title: msg,
+		    desc: msg,
 		    link: link,
 		    imgUrl: img,
 		    success: function () { 

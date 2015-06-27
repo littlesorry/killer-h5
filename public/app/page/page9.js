@@ -42,8 +42,16 @@ define(['jquery', 'wechat', 'nprogress'], function($, wechat, NP) {
 		}, 1000);
 	};
 
-	p9.share = function() {
+	p9.share = function(idx) {
 		$(".page9 .overlay").show();
+		if (idx  == 1) {
+			wechat.shareTimeline("网易首款女上位陌生交友神器来啦！");
+			wechat.shareFriend("网易首款女上位陌生交友神器来啦！");
+		} else {
+			wechat.shareTimeline("你们这些骗人的小碧池，我裤子都脱了，你给我看这个！");
+			wechat.shareFriend("你们这些骗人的小碧池，我裤子都脱了，你给我看这个！");
+		}
+
 		wechat.callback = function() {
 			$(".page9 .overlay").hide();
 		};

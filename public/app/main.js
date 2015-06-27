@@ -45,7 +45,8 @@ require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, w
 
         pages.init();
         wechat.init();
-        wechat.shareTimeline();
+        wechat.shareTimeline("网易首款女上位陌生交友神器来啦！");
+        wechat.shareFriend("网易首款女上位陌生交友神器来啦！");
 
         var runPage = new FullPage({
             id : 'pageContain',                            // id of contain
@@ -67,14 +68,17 @@ require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, w
             , callback : function(index, thisPage) {       // callback when pageChange     
                 if ($(thisPage).hasClass('page7')) {
                     p7.render();
+                } else if ($(thisPage).hasClass('page9')) {
+                    p9.render();
                 }
             }
         });
         $(".pageload-overlay").remove();
 
         window.runPage = runPage;
-        window.next = function() {runPage.next();}
-        window.prev = function() {runPage.prev();}
+        window.next = function() {runPage.next();};
+        window.prev = function() {runPage.prev();};
+        window.go = function(idx) {runPage.go(idx || 0);};
 
     });
 

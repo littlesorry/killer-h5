@@ -5,6 +5,7 @@ requirejs.config({
         'jquery': 'lib/jquery-1.11.1.min',
         'jtap': 'lib/jtap',
         'nprogress': 'lib/nprogress',
+        'progressbar': 'lib/progressbar.min',
         'fullPage': 'lib/fullPage',
         'wx': '//res.wx.qq.com/open/js/jweixin-1.0.0',
         'wechat': 'app/wechat',

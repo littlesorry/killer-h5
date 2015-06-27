@@ -327,23 +327,31 @@ body {
 .page7 .text-outer {
 	height: 75px;
 	width: 75px;
-	margin-top: 175px;
+	margin-top: 163px;
 }
 
 .page7 .text-outer-1 {
-	margin-left: -82px;
+	margin-left: -95px;
 }
 
 .page7 .text-outer-2 {
-	margin-left: 27px;
+	margin-left: 18px;
+}
+
+.page7 .text {
+	position: absolute;
 }
 
 .page7 .text-1 {
 	height: 52px;
+	top: 10px;
+	left: 15px;
 }
 
 .page7 .text-2 {
 	height: 52px;
+	left: 5px;
+	top: 10px;
 }
 
 .page8 .img {
@@ -1001,7 +1009,7 @@ body {
 .page6 .item-3 {margin-top: -67px;}
 .page6 .item-4 {margin-top: -37px;}
 
-.page7 .text-outer {margin-top: 135px;}
+.page7 .text-outer {margin-top: 126px;}
 
 .page8 .img{top: -12%;}
 .page8 .item-1{margin-top: 98px;}

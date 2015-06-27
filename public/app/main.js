@@ -2,7 +2,7 @@ requirejs.config({
     baseUrl: '/',
     waitSeconds: 60,
     paths: {
-        'jquery': '//libs.baidu.com/jquery/1.11.1/jquery.min',
+        'jquery': 'lib/jquery-1.11.1.min',
         'jtap': 'lib/jtap',
         'nprogress': 'lib/nprogress',
         'fullPage': 'lib/fullPage',
@@ -32,22 +32,6 @@ requirejs.config({
         },
         'wx': {
             exports: 'wx'
-        },
-        'three': {
-            exports: 'THREE'
-        },
-        'project': {
-            deps: ['three']
-        },
-        'renderer': {
-            deps: ['three']
-        },
-        'camera': {
-            deps: ['three']
-        },
-        'd3': {
-            deps: ['three', 'project', 'renderer', 'camera'],
-            exports: 'd3'
         }
     }
 });
@@ -68,7 +52,7 @@ require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, w
             slideTime : 200,                               // time of slide
             effect : {                                     // slide effect
                 transform : {
-                    translate : 'X',                   // 'X'|'Y'|'XY'|'none'
+                    translate : 'none',                   // 'X'|'Y'|'XY'|'none'
                     scale : [1, 1],                   // [scalefrom, scaleto]
                     rotate : [0, 0]                    // [rotatefrom, rotateto]
                 },
@@ -81,9 +65,17 @@ require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, w
             , beforeChange : function(index, thisPage) {   // callback before pageChange
             }
             , callback : function(index, thisPage) {       // callback when pageChange     
+                if ($(thisPage).hasClass('page7')) {
+                    p7.render();
+                }
             }
         });
         $(".pageload-overlay").remove();
+
+        window.runPage = runPage;
+        window.next = function() {runPage.next();}
+        window.prev = function() {runPage.prev();}
+
     });
 
 });

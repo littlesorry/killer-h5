@@ -54,7 +54,7 @@ define(['jquery', 'wechat', 'nprogress'], function($, wechat, NP) {
 			wechat.shareTimeline("你们这些骗人的小碧池，我裤子都脱了，你给我看这个！");
 			wechat.shareFriend("你们这些骗人的小碧池，我裤子都脱了，你给我看这个！");
 		}
-
+		audioBtn.play();
 		wechat.callback = function() {
 			$(".page9 .overlay").hide();
 		};

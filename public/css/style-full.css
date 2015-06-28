@@ -494,12 +494,12 @@ body {
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
-.right-in {
+.active .right-in {
 	-webkit-animation: dragRight 0.5s ease 0.7s both;
 	animation: dragRight 0.5s ease 0.7s both;
 }
 
-.topIn {
+.active .topIn {
 	-webkit-animation: dragTop 0.5s ease 0.8s both;
 	animation: dragTop 0.5s ease 0.8s both;
 }
@@ -547,76 +547,76 @@ body {
 	-webkit-animation: rotateIn 0.6s ease both;
 }
 
-.delay {
-	-webkit-animation-delay: 0.5s;
-}
-
-.delay-0 {
-	-webkit-animation-delay: 0.75s;
-}
-
-.delay-1 {
+.active .delay {
 	-webkit-animation-delay: 1s;
 }
 
-.delay-2 {
-	-webkit-animation-delay: 1.25s;
-}
-
-.delay-3 {
-	-webkit-animation-delay: 1.5s;
-}
-
-.delay-4 {
+.active .delay-0 {
 	-webkit-animation-delay: 1.75s;
 }
 
-.delay-5 {
+.active .delay-1 {
 	-webkit-animation-delay: 2s;
 }
 
-.delay-6 {
+.active .delay-2 {
 	-webkit-animation-delay: 2.25s;
 }
 
-.delay-7 {
+.active .delay-3 {
+	-webkit-animation-delay: 2.5s;
+}
+
+.active .delay-4 {
 	-webkit-animation-delay: 2.75s;
 }
 
-.delay-9 {
+.active .delay-5 {
+	-webkit-animation-delay: 3s;
+}
+
+.active .delay-6 {
 	-webkit-animation-delay: 3.25s;
 }
 
-.delay-11 {
+.active .delay-7 {
 	-webkit-animation-delay: 3.75s;
 }
 
-.delay-13 {
-	-webkit-animation-delay: 4s;
+.active .delay-9 {
+	-webkit-animation-delay: 4.25s;
 }
 
-.delay-15 {
-	-webkit-animation-delay: 4.5s;
+.active .delay-11 {
+	-webkit-animation-delay: 4.75s;
 }
 
-.delay-long {
-	-webkit-animation-delay: 4s;
+.active .delay-13 {
+	-webkit-animation-delay: 5s;
+}
+
+.active .delay-15 {
+	-webkit-animation-delay: 5.5s;
+}
+
+.active .delay-long {
+	-webkit-animation-delay: 5s;
 }
 
 
-.duration-mid {
+.active .duration-mid {
 	-webkit-animation-duration: 1.25s;
 }
 
-.duration-short {
+.active .duration-short {
 	-webkit-animation-duration: 0.2s;
 }
 
-.duration-long {
+.active .duration-long {
 	-webkit-animation-duration: 2s;
 }
 
-.loop {
+.active .loop {
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 }

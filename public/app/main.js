@@ -51,14 +51,14 @@ require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, w
 
         var runPage = new FullPage({
             id : 'pageContain',                            // id of contain
-            slideTime : 300,                               // time of slide
+            slideTime : 400,                               // time of slide
             effect : {                                     // slide effect
                 transform : {
                     translate : 'X',                   // 'X'|'Y'|'XY'|'none'
                     scale : [1, 1],                   // [scalefrom, scaleto]
                     rotate : [0, 0]                    // [rotatefrom, rotateto]
                 },
-                opacity : [0, 1]                       // [opacityfrom, opacityto]
+                opacity : [1, 1]                       // [opacityfrom, opacityto]
             },                           
             mode : 'touch',                                  // mode of fullpage
             easing : 'ease'                                // easing('ease','ease-in','ease-in-out' or use cubic-bezier like [.33, 1.81, 1, 1];

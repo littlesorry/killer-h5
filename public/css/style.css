@@ -71,6 +71,13 @@ body {
 	to { transform: translateX(-20px); }
 }
 
+.page.current {
+	background-color: #6a777d;
+	background-image: url(../assets/bg.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
 .page .arrow {
 	left: 50%;
 	top: 50%;
@@ -552,55 +559,55 @@ body {
 }
 
 .delay {
-	-webkit-animation-delay: 0.25s;
-}
-
-.delay-0 {
 	-webkit-animation-delay: 0.5s;
 }
 
-.delay-1 {
+.delay-0 {
 	-webkit-animation-delay: 0.75s;
 }
 
-.delay-2 {
+.delay-1 {
 	-webkit-animation-delay: 1s;
 }
 
-.delay-3 {
+.delay-2 {
 	-webkit-animation-delay: 1.25s;
 }
 
-.delay-4 {
+.delay-3 {
 	-webkit-animation-delay: 1.5s;
 }
 
-.delay-5 {
+.delay-4 {
 	-webkit-animation-delay: 1.75s;
 }
 
-.delay-6 {
+.delay-5 {
 	-webkit-animation-delay: 2s;
 }
 
-.delay-7 {
+.delay-6 {
 	-webkit-animation-delay: 2.25s;
 }
 
-.delay-9 {
+.delay-7 {
 	-webkit-animation-delay: 2.75s;
 }
 
-.delay-11 {
+.delay-9 {
 	-webkit-animation-delay: 3.25s;
 }
 
-.delay-13 {
+.delay-11 {
 	-webkit-animation-delay: 3.75s;
 }
 
-.delay-15 {
+.delay-13 {
 	-webkit-animation-delay: 4s;
+}
+
+.delay-15 {
+	-webkit-animation-delay: 4.5s;
 }
 
 .delay-long {

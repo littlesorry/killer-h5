@@ -201,8 +201,8 @@ body {
 }
 
 .page4 .label-bottom {
-	width: 233px;
-	margin-left: -117px;
+	width: 236px;
+	margin-left: -118px;
 }
 
 .page4 .ban-l, .page4 .ban-inner-l {
@@ -240,8 +240,8 @@ body {
 }
 
 .page5 .label-bottom {
-	width: 283px;
-	margin-left: -142px;
+	width: 291px;
+	margin-left: -146px;
 }
 
 .page5 .ban-inner-l, .page5 .ban-l {
@@ -278,8 +278,8 @@ body {
 }
 
 .page6 .label-top {
-	width: 217px;
-	margin-left: -109px;
+	width: 259px;
+	margin-left: -130px;
 	margin-top: -220px;
 }
 
@@ -296,7 +296,7 @@ body {
 }
 
 .page6 .item-3 {
-	width: 250px;
+	width: 282px;
 	margin-left: -140px;	
 	margin-top: -87px;
 }
@@ -314,8 +314,8 @@ body {
 }
 
 .page7 .title {
-	width: 250px;
-	margin-left: -125px;
+	width: 243px;
+	margin-left: -122px;
 }
 
 .page7 .icon {
@@ -549,6 +549,10 @@ body {
 
 .rotateIn {
 	-webkit-animation: rotateIn 0.6s ease both;
+}
+
+.delay {
+	-webkit-animation-delay: 0.25s;
 }
 
 .delay-0 {
@@ -1032,7 +1036,7 @@ body {
 @media screen and (min-device-height : 481px) and (max-device-height: 570px) {
 .page .title {margin-top: -190px;}
 .page .arrow {margin-top: 83px;}
-.page .label-bottom {margin-top: 138px;}
+.page .label-bottom {margin-top: 130px;}
 .page7 .text-outer {margin-top: 165px;}
 
 .page8 .img{top: -5%;}

@@ -39,7 +39,7 @@ define(['jquery', 'wechat', 'nprogress'], function($, wechat, NP) {
 	p9.render = function() {
 		$(".page .btn-outer").hide();
 		setTimeout(function() {
-			$(".page9 .index").animateNumbers(213797);
+			$(".page9 .index").animateNumbers(200000 + parseInt((Math.random() * 100000)));
 		}, 1000);
 	};
 

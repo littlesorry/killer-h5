@@ -88,9 +88,15 @@ require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, w
         //     }
         // });
 
-        var fullpage = window.fullpage = $('#fullpage').show().fullpage();
+        var fullpage = window.fullpage = $('#fullpage').show().fullpage({
+            onSlideLeave: function() {
+                 return false;
+            },
+            onLeave: function() {
+                return false;
+            }
+        });
         $(".pageload-overlay").remove();
-        window.runPage = runPage;
         window.next = function() {$.fn.fullpage.moveSectionDown();};
         window.go = function(idx) {r$.fn.fullpage.silentMoveTo('firstSlide', idx);};
 

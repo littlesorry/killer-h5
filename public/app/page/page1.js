@@ -13,7 +13,7 @@ define(["jquery"], function($) {
 		audioBtn.play();
 		$(".page1 .btn-outer").show();
 		setTimeout(function() {
-			next();
+			$.fn.fullpage.moveSectionDown();
 		}, 250);
 	}
 

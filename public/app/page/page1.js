@@ -10,6 +10,7 @@ define(["jquery"], function($) {
 	};
 
 	p1.next = function() {
+		audioBtn.play();
 		$(".page1 .btn-outer").show();
 		setTimeout(function() {
 			next();

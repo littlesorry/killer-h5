@@ -7,6 +7,9 @@ define(['jquery', 'progressbar'], function($, ProgressBar) {
     	setTimeout(function() {
     		$(".page7 .icon-1").addClass("fadeOut");
     		$(".page7 .icon-2").removeClass("hide");
+    		setTimeout(function() {
+    			audioFade.play();
+    		}, 1000);
 
     		setTimeout(function() {
 				var startColor = '#ff57d0';

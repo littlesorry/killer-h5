@@ -70,7 +70,8 @@ require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, w
             , beforeChange : function(index, thisPage) {   // callback before pageChange
                 $(".page1 .btn-outer").hide();
             }
-            , callback : function(index, thisPage) {       // callback when pageChange     
+            , callback : function(index, thisPage) {       // callback when pageChange  
+                audioSlip.play();   
                 if ($(thisPage).hasClass('page7')) {
                     p7.render();
                 } else if ($(thisPage).hasClass('page9')) {

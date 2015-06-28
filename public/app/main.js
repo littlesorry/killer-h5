@@ -7,7 +7,7 @@ requirejs.config({
         'nprogress': 'lib/nprogress',
         'progressbar': 'lib/progressbar.min',
         'fullPage': 'lib/fullPage',
-        'wx': '//res.wx.qq.com/open/js/jweixin-1.0.0',
+        'wx': '//res.wx.qq.com/open/js/jweixin-1.1.0',
         'wechat': 'app/wechat',
         'page': 'app/page',
         'page0': 'app/page/page0',
@@ -65,11 +65,16 @@ require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, w
             , onSwipeStart : function(index, thisPage) {   // callback before pageChange
                 if ($(thisPage).hasClass('page1')) {
                     return 'stop';
-                }
+                } 
             }
-            , beforeChange : function(index, thisPage) {   // callback before pageChange
+            , beforeChange : function(index, thisPage, nextDiff) {   // callback before pageChange
                 $(".page1 .btn-outer").hide();
-            }
+                if ($(".arrow", $(thisPage)).size() > 0) {
+                    if ($(".arrow", $(thisPage)).offset().left < 50) {
+                        return 'stop';
+                    }
+                }
+             }
             , callback : function(index, thisPage) {       // callback when pageChange  
                 audioSlip.play();   
                 if ($(thisPage).hasClass('page7')) {

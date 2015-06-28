@@ -599,6 +599,10 @@ body {
 	-webkit-animation-delay: 3.75s;
 }
 
+.delay-15 {
+	-webkit-animation-delay: 4s;
+}
+
 .delay-long {
 	-webkit-animation-delay: 4s;
 }

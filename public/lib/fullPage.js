@@ -918,7 +918,7 @@ function FullPage(options) {
 								if (prev) reset(prev, - 1);
 								if (next) reset(next, + 1);
 							} else if (options.beforeChange 
-									   && options.beforeChange(indexNow, page[indexNow]) === 'stop') {
+									   && options.beforeChange(indexNow, page[indexNow], nextDiff) === 'stop') {
 								if (prev) reset(prev, - 1);
 								if (next) reset(next, + 1);
 							} else if (nextDiff === -1) {

@@ -39,15 +39,14 @@ requirejs.config({
 
 require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, wechat) {
     $(function() {
-        var preOntouch = document.ontouchmove;
-        // document.ontouchstart = function(e){ 
-        //     e.preventDefault(); 
-        // };
+        $("title").html("“女上位”陌生交友神器");
 
         pages.init();
         wechat.init();
-        wechat.shareTimeline("发现一款好无节操的陌生交友神器，你要不要約約看？");
-        wechat.shareFriend("发现一款好无节操的陌生交友神器，你要不要約約看？");
+        setTimeout(function() {
+            wechat.shareTimeline("发现一款好无节操的陌生交友神器，你要不要約約看？");
+            wechat.shareFriend("发现一款好无节操的陌生交友神器，你要不要約約看？");
+        }, 3500);
 
         var runPage = new FullPage({
             id : 'pageContain',                            // id of contain

@@ -93,8 +93,12 @@ require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, w
         window.prev = function() {runPage.prev();};
         window.go = function(idx) {runPage.go(idx || 0);};
 
+        try {
+            audioBg.play();
+        } catch (e) {
+            console.log(e);
+        }
     });
-
 });
 
 

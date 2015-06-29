@@ -407,33 +407,33 @@ body {
 	margin-top: 105px;
 }
 
-.page9 .btn {
+.page8 .btn, .page9 .btn {
 	width: 150px;
 	margin-top: 155px;
 }
 
-.page9 .btn-l {
+.page8 .btn-l, .page9 .btn-l {
 	margin-left: -156px;
 }
 
-.page9 .btn-r {
+.page8 .btn-r, .page9 .btn-r {
 	margin-left: 4px;
 }
 
-.page9 .btn-outer-l, .page9 .btn-outer-r {
+.page8 .btn-outer-l, .page8 .btn-outer-r, .page9 .btn-outer-l, .page9 .btn-outer-r {
 	width: 157px;
 	margin-top: 155.5px;
 }
 
-.page9 .btn-outer-l {
+.page8 .btn-outer-l, .page9 .btn-outer-l {
 	margin-left: -159px;
 }
 
-.page9 .btn-outer-r {
+.page8 .btn-outer-r, .page9 .btn-outer-r {
 	margin-left: 1px;
 }
 
-.page9 .icon-img {
+.page8 .icon-img, .page9 .icon-img {
 	width: 53px;
 }
 
@@ -477,7 +477,7 @@ body {
 	height: 100%;
 }
 
-.page9 .hint {
+.page8 .hint, .page9 .hint {
 	position: absolute;
 	right: 15px;
 	top:10px;
@@ -1027,6 +1027,8 @@ body {
 .page8 .item-2{margin-top: 119px;}
 .page8 .item-3{margin-top: 142px;width: 210px;}
 .page8 .arrow{margin-top: 165px}
+.page8 .btn {margin-top:128px;}
+.page8 .btn-outer {margin-top: 130.5px;}
 
 .page9 .label-top {margin-top: -197px;}
 .page9 .index {margin-top: -136px;}

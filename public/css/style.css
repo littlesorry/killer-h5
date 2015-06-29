@@ -408,8 +408,11 @@ body {
 }
 
 .page8 .btn, .page9 .btn {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
 	width: 150px;
-	margin-top: 155px;
+	margin-top: -5px;
 }
 
 .page8 .btn-l, .page9 .btn-l {
@@ -421,8 +424,11 @@ body {
 }
 
 .page8 .btn-outer-l, .page8 .btn-outer-r, .page9 .btn-outer-l, .page9 .btn-outer-r {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
 	width: 157px;
-	margin-top: 155.5px;
+	margin-top: -5px;
 }
 
 .page8 .btn-outer-l, .page9 .btn-outer-l {
@@ -435,46 +441,6 @@ body {
 
 .page8 .icon-img, .page9 .icon-img {
 	width: 53px;
-}
-
-.page9 .row-1 {
-	margin-top: -115px;
-}
-
-.page9 .row-2 {
-	margin-top: -55px
-}
-
-.page9 .row-3 {
-	margin-top: 5px;
-}
-
-.page9 .line-1 {
-	margin-left: -147px;
-}
-
-.page9 .line-2 {
-	margin-left: -87px;
-}
-
-.page9 .line-3 {
-	margin-left: -27px;
-}
-
-.page9 .line-4 {
-	margin-left: 33px;
-}
-
-.page9 .line-5 {
-	margin-left: 93px;
-}
-
-.page9 .group-1, .page9 .group-2, .page9 .group-3 {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
 }
 
 .page8 .hint, .page9 .hint {

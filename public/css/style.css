@@ -428,7 +428,7 @@ body {
 	bottom: 0;
 	left: 50%;
 	width: 157px;
-	margin-top: -5px;
+	margin-top: -4px;
 }
 
 .page8 .btn-outer-l, .page9 .btn-outer-l {
@@ -993,8 +993,8 @@ body {
 .page8 .item-2{margin-top: 119px;}
 .page8 .item-3{margin-top: 142px;width: 210px;}
 .page8 .arrow{margin-top: 165px}
-.page8 .btn {margin-top:128px;}
-.page8 .btn-outer {margin-top: 130.5px;}
+/*.page8 .btn {margin-top:128px;}
+.page8 .btn-outer {margin-top: 130.5px;}*/
 
 .page9 .label-top {margin-top: -197px;}
 .page9 .index {margin-top: -136px;}

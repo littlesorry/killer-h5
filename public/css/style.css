@@ -366,19 +366,19 @@ body {
 .page8 .item-1 {
 	width: 194px;
 	margin-left: -140px;
-	margin-top: 90px;
+	margin-top: 60px;
 }
 
 .page8 .item-2 {
 	width: 295px;
 	margin-left: -140px;
-	margin-top: 125px;
+	margin-top: 95px;
 }
 
 .page8 .item-3 {
 	width: 236px;
 	margin-left: -140px;
-	margin-top: 160px;
+	margin-top: 130px;
 }
 
 .page8 .btn, .page9 .btn {
@@ -386,7 +386,7 @@ body {
 	bottom: 0;
 	left: 50%;
 	width: 150px;
-	margin-top: -5px;
+	margin-bottom: 15px;
 }
 
 .page8 .btn-l, .page9 .btn-l {
@@ -402,7 +402,7 @@ body {
 	bottom: 0;
 	left: 50%;
 	width: 157px;
-	margin-top: -4px;
+	margin-bottom: 14px;
 }
 
 .page8 .btn-outer-l, .page9 .btn-outer-l {
@@ -963,11 +963,11 @@ body {
 .page7 .text-outer {margin-top: 126px;}
 
 .page8 .img{top: -12%;}
-.page8 .item-1{margin-top: 98px;}
-.page8 .item-2{margin-top: 119px;}
-.page8 .item-3{margin-top: 142px;width: 210px;}
-.page8 .btn {margin-top:128px;}
-.page8 .btn-outer {margin-top: 130.5px;}
+.page8 .item-1{margin-top: 90px;}
+.page8 .item-2{margin-top: 111px;}
+.page8 .item-3{margin-top: 134px;width: 210px;}
+.page8 .btn {margin-bottom:5px;}
+.page8 .btn-outer {margin-bottom: 4px;}
 
 .page9 .label-top {margin-top: -197px;}
 .page9 .index {margin-top: -136px;}
@@ -988,9 +988,9 @@ body {
 .page7 .text-outer {margin-top: 165px;}
 
 .page8 .img{top: -7%;}
-.page8 .item-1{margin-top: 90px;}
-.page8 .item-2{margin-top: 113px;}
-.page8 .item-3{margin-top: 138px;width: 210px;}
+.page8 .item-1{margin-top: 70px;}
+.page8 .item-2{margin-top: 93px;}
+.page8 .item-3{margin-top: 117px;width: 210px;}
 
 .page9 .label-top {margin-top: -220px;}
 .page9 .index {margin-top: -158px;}

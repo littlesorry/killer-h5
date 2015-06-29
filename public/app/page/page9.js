@@ -1,4 +1,4 @@
-define(['jquery', 'wechat', 'nprogress'], function($, wechat, NP) {
+define(['jquery', 'nprogress'], function($, NP) {
 
 	(function($) {
 	    $.fn.animateNumbers = function(stop, commas, duration, ease) {
@@ -47,12 +47,12 @@ define(['jquery', 'wechat', 'nprogress'], function($, wechat, NP) {
 		$(".page9 .overlay").show();
 		if (idx  == 1) {
 			$(".page .btn-outer-l").show();
-			wechat.shareTimeline("发现一款好无节操的陌生交友神器，你要不要約約看？");
-			wechat.shareFriend("发现一款好无节操的陌生交友神器，你要不要約約看？");
+			// wechat.shareTimeline("发现一款好无节操的陌生交友神器，你要不要約約看？");
+			// wechat.shareFriend("发现一款好无节操的陌生交友神器，你要不要約約看？");
 		} else {
 			$(".page .btn-outer-r").show();
-			wechat.shareTimeline("说了半天無节操的交友神器呢！最後就给我看这个？");
-			wechat.shareFriend("说了半天無节操的交友神器呢！最後就给我看这个？");
+			// wechat.shareTimeline("说了半天無节操的交友神器呢！最後就给我看这个？");
+			// wechat.shareFriend("说了半天無节操的交友神器呢！最後就给我看这个？");
 		}
 		audioBtn.play();
 		wechat.callback = function() {

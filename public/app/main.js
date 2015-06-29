@@ -51,10 +51,10 @@ require(['jquery', 'fullPage', 'page', 'wechat'], function($, FullPage, pages, w
 
         var runPage = new FullPage({
             id : 'pageContain',                            // id of contain
-            slideTime : 400,                               // time of slide
+            slideTime : 300,                               // time of slide
             effect : {                                     // slide effect
                 transform : {
-                    translate : 'X',                   // 'X'|'Y'|'XY'|'none'
+                    translate : 'none',                   // 'X'|'Y'|'XY'|'none'
                     scale : [1, 1],                   // [scalefrom, scaleto]
                     rotate : [0, 0]                    // [rotatefrom, rotateto]
                 },

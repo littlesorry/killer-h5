@@ -72,10 +72,6 @@ body {
 }
 
 .page.current {
-	background-color: #6a777d;
-	background-image: url(../assets/bg.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
 }
 
 .page .arrow {

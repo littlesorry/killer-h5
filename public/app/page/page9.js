@@ -47,12 +47,12 @@ define(['jquery', 'wechat', 'nprogress'], function($, wechat, NP) {
 		$(".page9 .overlay").show();
 		if (idx  == 1) {
 			$(".page .btn-outer-l").show();
-			wechat.shareTimeline("网易首款女上位陌生交友神器来啦！");
-			wechat.shareFriend("网易首款女上位陌生交友神器来啦！");
+			wechat.shareTimeline("发现一款好无节操的陌生交友神器，你要不要約約看？");
+			wechat.shareFriend("发现一款好无节操的陌生交友神器，你要不要約約看？");
 		} else {
 			$(".page .btn-outer-r").show();
-			wechat.shareTimeline("你们这些骗人的小碧池，我裤子都脱了，你给我看这个！");
-			wechat.shareFriend("你们这些骗人的小碧池，我裤子都脱了，你给我看这个！");
+			wechat.shareTimeline("说了半天無节操的交友神器呢！最後就给我看这个？");
+			wechat.shareFriend("说了半天無节操的交友神器呢！最後就给我看这个？");
 		}
 		audioBtn.play();
 		wechat.callback = function() {
